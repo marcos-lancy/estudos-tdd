@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sol.Carrinhodecompra", "Sol.Carrinhodecompra\Sol.Carrinhodecompra.csproj", "{B570231D-7E88-4450-942C-DAF9F46C71BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol.Carrinhodecompra", "Sol.Carrinhodecompra\Sol.Carrinhodecompra.csproj", "{B570231D-7E88-4450-942C-DAF9F46C71BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Test", "Projeto.Test\Projeto.Test.csproj", "{D5D93665-3C9B-48AD-8A96-9A1BF12A0A9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B570231D-7E88-4450-942C-DAF9F46C71BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B570231D-7E88-4450-942C-DAF9F46C71BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B570231D-7E88-4450-942C-DAF9F46C71BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D93665-3C9B-48AD-8A96-9A1BF12A0A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D93665-3C9B-48AD-8A96-9A1BF12A0A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D93665-3C9B-48AD-8A96-9A1BF12A0A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D93665-3C9B-48AD-8A96-9A1BF12A0A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

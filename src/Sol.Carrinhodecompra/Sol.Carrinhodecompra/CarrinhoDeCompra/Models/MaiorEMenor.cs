@@ -8,7 +8,6 @@ namespace Sol.Carrinhodecompra.Models
         public Produto Menor { get; private set; }
         public Produto Maior { get; private set; }
 
-
         public void Encontra(CarrinhoDeCompras carrinho)
         {
             foreach (Produto produto in carrinho.Produtos)
@@ -17,7 +16,7 @@ namespace Sol.Carrinhodecompra.Models
                 {
                     Menor = produto;
                 }
-                else if (Maior == null || produto.Valor < Maior.Valor)
+                if (Maior == null || produto.Valor > Maior.Valor)
                 {
                     Maior = produto;
                 }
