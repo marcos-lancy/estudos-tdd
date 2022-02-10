@@ -1,1 +1,1 @@
-parei no capitulo 5, inicio
+parei no capitulo 58 mo meio
