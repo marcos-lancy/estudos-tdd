@@ -31,10 +31,6 @@ namespace Sol.Carrinhodecompra.CarrinhoDeCompra2
         }
     }
 
-    public class MaiorPreco{
-        
-    }
-
     public class Item{
         public string Descricao { get; private set; }
         public int Quantidade { get; private set; }
@@ -54,4 +50,17 @@ namespace Sol.Carrinhodecompra.CarrinhoDeCompra2
             }
         }
     }
+
+    // public class carrinhoDeComprasBuilder
+    // {
+    //     public CarrinhoDeCompras Criar(){}
+
+    //     public carrinhoDeComprasBuilder ComItens(double valores)
+    //     {
+    //         foreach (var valor in valores)
+    //         {
+    //             carrinho.Adicionar()
+    //         }
+    //     }
+    // }
 }

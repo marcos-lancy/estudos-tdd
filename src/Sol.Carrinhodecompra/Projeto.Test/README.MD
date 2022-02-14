@@ -1,1 +1,4 @@
-parei no capitulo 58 mo meio
+parei no capitulo 76
+TDD e a Coesão
+
+(Página 88). 
