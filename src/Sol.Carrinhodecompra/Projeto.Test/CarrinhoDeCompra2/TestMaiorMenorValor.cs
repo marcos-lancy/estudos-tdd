@@ -13,6 +13,10 @@ namespace Projeto.Test.CarrinhoDeCompra2
             this.carrinho = new CarrinhoDeCompras();
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 16ef3d34f008de7a2fc743f2df7a8b9a86c9f470
         [Test]
         public void DeveRetornarZeroSeCarrinhoVazio(){
             double valor = carrinho.Encontra(carrinho);
@@ -32,7 +36,11 @@ namespace Projeto.Test.CarrinhoDeCompra2
 
         // Item mais caro primeior
         [Test] public void DeveRetornarMaiorValorSeCarrinhoContemMuitosElementos1() 
+<<<<<<< HEAD
         { 
+=======
+        {  
+>>>>>>> 16ef3d34f008de7a2fc743f2df7a8b9a86c9f470
             carrinho.Adiciona(new Item("Fogão", 1, 1500.0)); 
             carrinho.Adiciona(new Item("Geladeira", 1, 900.0)); 
             carrinho.Adiciona(new Item("Máquina de Lavar", 1, 750.0)); 
@@ -44,7 +52,11 @@ namespace Projeto.Test.CarrinhoDeCompra2
 
         // Item mais caro por segundo
         [Test] public void DeveRetornarMaiorValorSeCarrinhoContemMuitosElementos2() 
+<<<<<<< HEAD
         { 
+=======
+        {  
+>>>>>>> 16ef3d34f008de7a2fc743f2df7a8b9a86c9f470
             carrinho.Adiciona(new Item("Geladeira", 1, 900.0)); 
             carrinho.Adiciona(new Item("Fogão", 1, 1500.0)); 
             carrinho.Adiciona(new Item("Máquina de Lavar", 1, 750.0)); 
@@ -56,7 +68,11 @@ namespace Projeto.Test.CarrinhoDeCompra2
 
         // Item mais caro por ultimo
         [Test] public void DeveRetornarMaiorValorSeCarrinhoContemMuitosElementos3() 
+<<<<<<< HEAD
         { 
+=======
+        {  
+>>>>>>> 16ef3d34f008de7a2fc743f2df7a8b9a86c9f470
             carrinho.Adiciona(new Item("Geladeira", 1, 900.0)); 
             carrinho.Adiciona(new Item("Máquina de Lavar", 1, 750.0)); 
             carrinho.Adiciona(new Item("Fogão", 1, 1500.0)); 
