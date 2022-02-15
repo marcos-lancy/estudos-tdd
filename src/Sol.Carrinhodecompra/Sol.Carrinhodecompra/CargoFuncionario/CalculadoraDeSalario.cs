@@ -1,21 +1,43 @@
+using System;
+
 namespace Sol.Carrinhodecompra.CargoFuncionario
 {
     public class CalculadoraDeSalario
     {
-        public double CalculaSalario(Funcionario funcionario){
+        public double CalculaSalario(Funcionario funcionario)
+        {
 
-            if(funcionario.Salario > 3000){
-                return funcionario.Salario * 0.8;   
+            if(funcionario.Cargo.Equals(Cargo.DESENVOLVEDOR))
+            {
+               return DezOuVintePorCentoDeDesconto(funcionario);
             }
-            return funcionario.Salario * 0.9;
-            // if(funcionario.Cargo.Equals(Cargo.DESENVOLVEDOR)){
+            else if(funcionario.Cargo.Equals(Cargo.DBA) ||
+                    funcionario.Cargo.Equals(Cargo.TESTADOR))
+            {
+               return QuinzeOuVinteCincoPorCentoDeDesconto(funcionario);
+            }
 
-            //     if(funcionario.Salario > 3000) return 3200.0;
+            throw new Exception("Funcionario invalido");
+        }
 
-            //     return 1350.0;
-            // }
+        private double QuinzeOuVinteCincoPorCentoDeDesconto(Funcionario funcionario){
+            
+            if(funcionario.Salario < 2500){
 
-            // return 425.0;
+                return funcionario.Salario * 0.85;
+            }
+
+            return funcionario.Salario * 0.75;
+        }
+
+        private double DezOuVintePorCentoDeDesconto(Funcionario funcionario) { 
+            
+            if(funcionario.Salario > 3000){
+
+                return funcionario.Salario * 0.8; 
+            }
+                
+            return funcionario.Salario * 0.9; 
         }
     }
 }
