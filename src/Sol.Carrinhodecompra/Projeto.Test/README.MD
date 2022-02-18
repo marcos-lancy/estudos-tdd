@@ -1,1 +1,4 @@
-parei no capitulo 85
+parei no capitulo 91
+TDD e o Acoplamento
+
+(Página 102). 

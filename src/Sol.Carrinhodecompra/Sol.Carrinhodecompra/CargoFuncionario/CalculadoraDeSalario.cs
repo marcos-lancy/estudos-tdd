@@ -40,4 +40,33 @@ namespace Sol.Carrinhodecompra.CargoFuncionario
             return funcionario.Salario * 0.9; 
         }
     }
+
+
+    public interface IRegraDeCalculo{
+        double Calcula(Funcionario f);
+    }
+    
+    public class DezOuVintePorCento : IRegraDeCalculo
+    {
+        public double Calcula(Funcionario f)
+        {
+            if(f.Salario > 3000){
+                return f.Salario * 0.8;
+            }
+
+            return f.Salario * 0.9;
+        }
+    }
+
+    public class QuinzeOuVinteCincoPorCento : IRegraDeCalculo
+    {
+        public double Calcula(Funcionario f)
+        {
+            if(f.Salario < 2500){
+                return f.Salario * 0.85;
+            }
+
+            return f.Salario * 0.75;
+        }
+    }
 }
