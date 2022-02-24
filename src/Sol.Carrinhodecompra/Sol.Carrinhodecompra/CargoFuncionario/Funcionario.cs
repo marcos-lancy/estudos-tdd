@@ -1,13 +1,5 @@
 namespace Sol.Carrinhodecompra.CargoFuncionario
 {
-
-    public enum Cargo
-    {
-        DESENVOLVEDOR,
-        DBA,
-        TESTADOR
-    }
-
     public class Funcionario
     {
         public string Nome { get; set; }
